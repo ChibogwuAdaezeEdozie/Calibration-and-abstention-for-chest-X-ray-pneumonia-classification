@@ -37,3 +37,8 @@ Public Kaggle dataset: Chest X-ray Images (labeled-chest-xray-images). https://w
 1. Abstention helped. Answering only the 80% most confident cases cut the error from 6.9% to 1.2%. The most confident cases (roughly the top 60%) contained no errors. Ranking cases by confidence and deferring the least confident ones is useful on this dataset.
 2. Temperature scaling did not help. ECE went from 0.042 to 0.050. The temperature was fitted on the validation set, where accuracy was 98-99%, much higher than on the test set (93.1%). The fitted temperature (0.70) made the model more confident, which did not suit the harder test images. This is consistent with the validation set being too similar to the training set (see limitations). In an earlier run, temperature scaling changed ECE from 0.048 to 0.044, so across the two runs it made no consistent difference.
 3. Errors were all false alarms. Sensitivity was 100% (no pneumonia case was missed) and specificity was 81.6%, so every error was a normal X-ray flagged as pneumonia. That is the safer direction for a screening tool, but it means nearly 1 in 5 normal X-rays would be sent for review. 38 of 624 images had confidence below 90%.
+
+**Limitations**
+1. Results vary between runs. An earlier run of the same code gave 93.9% test accuracy, a fitted temperature of 1.05, and an error of 6.1% when answering every case. Training on a GPU is not exactly repeatable, so differences of about one percentage point should not be over-interpreted. I did not average over several seeds.
+2. The reliability diagram is noisy because the low-confidence bins contain very few images.
+3. The test set is small, so every percentage above has wide uncertainty. 
