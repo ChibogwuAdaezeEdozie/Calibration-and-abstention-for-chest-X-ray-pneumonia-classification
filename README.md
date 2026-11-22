@@ -1,4 +1,4 @@
-# Calibration-and-abstention-for-chest-X-ray-pneumonia-classification
+# Calibration and Abstention for Chest X-ray Pneumonia Classification
 
 A baseline model asking two questions about a pneumonia classifier:
 1.	When the model says it is 95% confident, is it right about 95% of the time? 
