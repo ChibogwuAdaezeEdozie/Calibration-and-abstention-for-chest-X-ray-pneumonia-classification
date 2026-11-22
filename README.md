@@ -17,3 +17,7 @@ Results (test set, 624 images, one run)
 | ECE before temperature scaling| 	0.042 | 
 | ECE after temperature scaling (T = 0.70) | 	0.050 | 
 
+| Measure  | Value |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
