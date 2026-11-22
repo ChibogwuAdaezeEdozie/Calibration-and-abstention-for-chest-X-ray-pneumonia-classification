@@ -9,18 +9,10 @@ Public Kaggle dataset: Chest X-ray Images (labeled-chest-xray-images). It comes 
 
 Results (test set, 624 images, one run)
 
-| Measure | Value | 
-| --- | --- | --- |
-| Accuracy| 	93.1% | 
-| Sensitivity (pneumonia found)| [SENS]% |
-| Specificity (normal found)| 	[SPEC]% | 
-| ECE before temperature scaling| 	0.042 | 
-| ECE after temperature scaling (T = 0.70) | 	0.050 | 
-
 | Measure  | Value |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Accuracy  | 	93.1%  |
+| Sensitivity (pneumonia found)  | [SENS]%  |
+| Specificity (normal found)  | 	[SPEC]%  |
+| ECE before temperature scaling  | 	0.042  |
+| ECE after temperature scaling (T = 0.70)  | 	0.050  |
